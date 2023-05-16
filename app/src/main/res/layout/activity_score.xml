@@ -17,12 +17,6 @@
         android:padding="20dp"
         android:background="@color/black"
         />
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="return_to_main"
-        android:id="@+id/highscore_BTN_returnToMain"
-        android:backgroundTint="#1B0095"/>
 
     <FrameLayout
         android:id="@+id/frame_map"

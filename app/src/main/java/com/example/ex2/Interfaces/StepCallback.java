@@ -5,5 +5,4 @@ public interface StepCallback {
 
     void stepY();
 
-    void stepZ();
 }

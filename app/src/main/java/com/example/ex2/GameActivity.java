@@ -8,7 +8,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
-import android.location.LocationListener;
 import android.location.LocationManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -42,7 +41,7 @@ public class GameActivity extends AppCompatActivity {
     private StepDetector stepDetector;
     private final int COLONS = 5;
     private final int ROWS = 6;
-    private final int EASY_GAME = 0;
+   // private final int EASY_GAME = 0;
     private final int HARD_GAME = 1;
     private int period=1000;
     private Button main_BTN_submit;
@@ -61,8 +60,6 @@ public class GameActivity extends AppCompatActivity {
     int randomNum2;
     private Location location;
 
-    protected LocationManager locationManager;
-    protected LocationListener locationListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,11 +117,6 @@ public class GameActivity extends AppCompatActivity {
                     stepCounterY=stepDetector.getStepsY();
                     period=period-100;
                 }
-            }
-
-            @Override
-            public void stepZ() {
-                // pass
             }
         });
 

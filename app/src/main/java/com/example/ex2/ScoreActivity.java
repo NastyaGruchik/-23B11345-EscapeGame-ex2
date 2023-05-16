@@ -26,7 +26,7 @@ public class ScoreActivity extends AppCompatActivity implements OnMapReadyCallba
     private MapFragment mapFragment;
     private TextView info;
     private GoogleMap map;
-    private MaterialButton returnToMain;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -47,19 +47,8 @@ public class ScoreActivity extends AppCompatActivity implements OnMapReadyCallba
         mapFragment.setCallBackMap(callBack_map);
         getSupportFragmentManager().beginTransaction().add(R.id.frame_map, mapFragment).commit();
 
-        returnToMain = findViewById(R.id.highscore_BTN_returnToMain);
-        returnToMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ScoreActivity.this, MainActivity.class));
-            }
-        });
     }
     CallBack_List callBack_List = new CallBack_List() {
-        @Override
-        public void setMainTitle(String str) {
-            info.setText(str);
-        }
 
         @Override
         public void rowSelected(int i) {
@@ -76,9 +65,6 @@ public class ScoreActivity extends AppCompatActivity implements OnMapReadyCallba
 
 
     CallBack_Map callBack_map = new CallBack_Map() {
-        @Override
-        public void mapClicked(double lat, double lon) {
-        }
 
         @Override
         public void locationSelected(Record record) {
