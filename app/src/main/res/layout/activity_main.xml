@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_main">
+
+
+    <Button
+        android:id="@+id/sv_btn_easyGame"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="EASY GAME"
+        android:textSize="30sp"
+        android:textColor="@color/purple_200"
+        style="?attr/materialButtonOutlinedStyle"
+        />
+
+    <Button
+        android:id="@+id/sv_btn_hardGame"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="HARD GAME"
+        android:textSize="30sp"
+        android:textColor="@color/purple_200"
+        style="?attr/materialButtonOutlinedStyle"
+        />
+
+
+    <Switch
+        android:id="@+id/sv_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:checked="true"
+        android:text="Sensor mode"
+        android:textOff="off"
+        android:textOn="on"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textColor="@color/purple_200"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+    <Button
+        android:id="@+id/sv_btn_score"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:text="SCORE LIST"
+        android:textColor="@color/purple_200"
+        style="?attr/materialButtonOutlinedStyle"
+        />
+
+</LinearLayout>
